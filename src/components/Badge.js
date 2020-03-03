@@ -11,12 +11,12 @@ class Badge extends React.Component{
                 </header>
                 <main>
                     <section className='Badge__section-name'>
-                        <img  className='Badge__section-name__avatar' src="https://es.gravatar.com/avatar?d=identicon" alt="Avatar"/>
-                        <h1>Fadith <br/> Escorcia</h1>
+                        <img  className='Badge__section-name--avatar' src="https://es.gravatar.com/avatar?d=identicon" alt="Avatar"/>
+                        <h1>{this.props.firstName}<br/>{this.props.lastName}</h1>
                     </section>
                     <section className='Badge__section-info'>
-                        <h3>Frontend Developer</h3>
-                        <span>@Fad</span>
+                        <h3>{this.props.jobTitle}</h3>
+                        <span>@{this.props.twitter}</span>
                     </section>
                 </main>
                 <footer className='Badge__footer'>
@@ -28,3 +28,4 @@ class Badge extends React.Component{
 }
 
 export default Badge;
+
