@@ -1,18 +1,14 @@
 import React from "react";
 
 class BadgeForm extends React.Component {
-    state={
-        firstName:"",
-        lastName:"",
-        email: "",
-        jobTitle: "Front-end Developer",
-        twitter:""
-    };
-  handleChange = e => {
-    this.setState({
-      [e.target.name]: e.target.value
-    });
-  };
+  // state={
+  //   jobTitle: "Front-end Developer"
+  // };
+  // handleChange = e => {
+  //   this.setState({
+  //     [e.target.name]: e.target.value
+  //   });
+  // };
   handleClick = e => {
     console.log("Button clicked");
   };
@@ -20,7 +16,6 @@ class BadgeForm extends React.Component {
     e.preventDefault();
     console.log("Submited");
     console.log(this.state);
-    
   };
   render() {
     return (
@@ -30,53 +25,54 @@ class BadgeForm extends React.Component {
           <div className="form-group">
             <label htmlFor="firstName">First Name</label>
             <input
-              onChange={this.handleChange}
+              onChange={this.props.onChange}
               placeholder="Enter your name here"
               id="firstName"
               className="form-control"
               name="firstName"
               type="text"
-              value={this.state.firstName}
+              value={this.props.formValues.firstName}
             />
             <label htmlFor="lastName">Last Name</label>
             <input
-              onChange={this.handleChange}
+              onChange={this.props.onChange}
               placeholder="Enter your last name here"
               id="lastName"
               className="form-control"
               name="lastName"
               type="text"
-              value={this.state.lastName}
+              value={this.props.formValues.lastName}
             />
             <label htmlFor="email">Email</label>
             <input
-              onChange={this.handleChange}
+              onChange={this.props.onChange}
               placeholder="Enter your email here"
               id="email"
               className="form-control"
               name="email"
               type="email"
               required
-              value={this.state.email}
+              value={this.props.formValues.email}
             />
             <label htmlFor="jobTitle">Job Title</label>
             <input
-              onChange={this.handleChange}
+              onChange={this.props.onChange}
+              placeholder="Enter your job title here"
               id="jobTitle"
               className="form-control"
               name="jobTitle"
               type="text"
-                value={this.state.jobTitle}
+              value={this.props.formValues.jobTitle}
             />
             <label htmlFor="twitter">Twitter</label>
             <input
-              onChange={this.handleChange}
+              onChange={this.props.onChange}
               placeholder="Enter your twitter here"
               id="twitter"
               className="form-control"
               name="twitter"
               type="text"
-              value={this.state.twitter}
+              value={this.props.formValues.twitter}
             />
             <br />
             <button
