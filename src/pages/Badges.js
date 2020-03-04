@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import BadgeLists from "../components/BadgeLists"
 import "./styles/css/Badges.css";
 import BadgeHero from "../images/badge-header.svg";
+import {Link} from "react-router-dom";
 class Badges extends React.Component {
     state={
         data:[
@@ -41,8 +42,7 @@ class Badges extends React.Component {
 
   render() {
     return (
-      <div>
-        <Navbar />
+      <React.Fragment>
         <main>
           <section className="Badges">
             <div className="Badges__hero">
@@ -53,16 +53,14 @@ class Badges extends React.Component {
           </section>
           <section className="Badges__container">
             <div className="Badges__buttons">
-              <a href="/badges/new" className="Badges__buttons btn btn-primary">
+              <Link to="/badges/new" className="Badges__buttons btn btn-primary">
                 New Badge
-              </a>
+              </Link>
             </div>
             <BadgeLists listValues={this.state.data}/>
-
-
           </section>
         </main>
-      </div>
+      </React.Fragment>
     );
   }
 }
