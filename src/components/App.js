@@ -11,9 +11,15 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route exact path="/curso_de_react.js/home" component={Home} />
-          <Route exact path="/curso_de_react.js/badge" component={Badges} />
-          <Route exact path="/curso_de_react.js/badges/new" component={BadgeNew} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/curso_de_react.js/" component={Home} />
+          <Route exact path="/curso_de_react.js/home/" component={Home} />
+          <Route exact path="/curso_de_react.js/badge/" component={Badges} />
+          <Route
+            exact
+            path="/curso_de_react.js/badges/new"
+            component={BadgeNew}
+          />
           <Route component={NotFound} />
         </Switch>
       </Layout>

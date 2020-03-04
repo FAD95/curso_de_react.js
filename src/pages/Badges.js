@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import BadgeLists from "../components/BadgeLists"
 import "./styles/css/Badges.css";
 import BadgeHero from "../images/badge-header.svg";
@@ -53,7 +52,7 @@ class Badges extends React.Component {
           </section>
           <section className="Badges__container">
             <div className="Badges__buttons">
-              <Link to="/badges/new" className="Badges__buttons btn btn-primary">
+              <Link to="/curso_de_react.js/badges/new/" className="Badges__buttons btn btn-primary">
                 New Badge
               </Link>
             </div>

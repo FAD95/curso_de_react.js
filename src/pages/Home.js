@@ -7,7 +7,7 @@ class Home extends React.Component {
         return ( 
             <main>
                 <h1>Home</h1>
-                <Link to="/badge">Hla</Link>
+                <Link to="/curso_de_react.js/badge/">Hla</Link>
             </main>
          );
     }
