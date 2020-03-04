@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/curso_de_react.js/home/static/css/main.a91bdbd2.chunk.css",
-    "main.js": "/curso_de_react.js/home/static/js/main.6fc18f4e.chunk.js",
-    "main.js.map": "/curso_de_react.js/home/static/js/main.6fc18f4e.chunk.js.map",
+    "main.js": "/curso_de_react.js/home/static/js/main.da6d0a4f.chunk.js",
+    "main.js.map": "/curso_de_react.js/home/static/js/main.da6d0a4f.chunk.js.map",
     "runtime-main.js": "/curso_de_react.js/home/static/js/runtime-main.f0cf7443.js",
     "runtime-main.js.map": "/curso_de_react.js/home/static/js/runtime-main.f0cf7443.js.map",
     "static/css/2.67123b20.chunk.css": "/curso_de_react.js/home/static/css/2.67123b20.chunk.css",
     "static/js/2.e76f72a2.chunk.js": "/curso_de_react.js/home/static/js/2.e76f72a2.chunk.js",
     "static/js/2.e76f72a2.chunk.js.map": "/curso_de_react.js/home/static/js/2.e76f72a2.chunk.js.map",
     "index.html": "/curso_de_react.js/home/index.html",
-    "precache-manifest.a200a4b3be6a55f17efcf26ce56022ae.js": "/curso_de_react.js/home/precache-manifest.a200a4b3be6a55f17efcf26ce56022ae.js",
+    "precache-manifest.1cbb764b42486f3961f6e015e115d3f2.js": "/curso_de_react.js/home/precache-manifest.1cbb764b42486f3961f6e015e115d3f2.js",
     "service-worker.js": "/curso_de_react.js/home/service-worker.js",
     "static/css/2.67123b20.chunk.css.map": "/curso_de_react.js/home/static/css/2.67123b20.chunk.css.map",
     "static/css/main.a91bdbd2.chunk.css.map": "/curso_de_react.js/home/static/css/main.a91bdbd2.chunk.css.map",
@@ -23,6 +23,6 @@
     "static/css/2.67123b20.chunk.css",
     "static/js/2.e76f72a2.chunk.js",
     "static/css/main.a91bdbd2.chunk.css",
-    "static/js/main.6fc18f4e.chunk.js"
+    "static/js/main.da6d0a4f.chunk.js"
   ]
 }
