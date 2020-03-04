@@ -8,18 +8,13 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/curso_de_react.js/" component={Home} />
-          <Route exact path="/curso_de_react.js/home/" component={Home} />
-          <Route exact path="/curso_de_react.js/badge/" component={Badges} />
-          <Route
-            exact
-            path="/curso_de_react.js/badges/new"
-            component={BadgeNew}
-          />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/badge" component={Badges} />
+          <Route exact path="/badges/new" component={BadgeNew} />
           <Route component={NotFound} />
         </Switch>
       </Layout>
