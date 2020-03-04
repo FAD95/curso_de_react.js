@@ -31,8 +31,8 @@ class BadgeNew extends React.Component {
             <img className="img-fluid" src={header} alt="logo header" />
           </section>
           <section className="container">
-            <div className="row">
-              <div className="col-6">
+            <div className="row ">
+              <div className="col-12 col-md-6">
                 <Badge
                   firstName={this.state.form.firstName}
                   lastName={this.state.form.lastName}
@@ -40,7 +40,7 @@ class BadgeNew extends React.Component {
                   twitter={this.state.form.twitter}
                 />
               </div>
-              <div className="col-6">
+              <div className="col-12 col-md-6 mt-5">
                 <BadgeForm onChange={this.handleChange} formValues={this.state.form}/>
               </div>
             </div>
