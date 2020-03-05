@@ -1,0 +1,27 @@
+.home{
+    min-height: 91vh;
+    display: flex;
+    flex-direction: column;
+    background: url('../../../images/stars.svg'), #1B1B25;
+    justify-content: center;
+    align-items: center;
+    &__message{
+        margin: 0 10px;
+        color: white;
+        max-width: 300px;
+        &--logo{
+            max-width: 200px;
+            width: 100%;
+        }
+    }   
+    &__img{
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .home{
+        flex-direction: row;
+    }
+}
