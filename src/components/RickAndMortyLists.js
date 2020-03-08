@@ -30,9 +30,9 @@ class RickAndMortyLists extends React.Component {
         loading: false,
         data: {
           info: data.info,
-          results: [].concat(this.state.data.results, data.results),
+          results: [].concat(this.state.data.results, data.results)
         },
-        nextPage: this.state.nextPage +1,
+        nextPage: this.state.nextPage + 1
       });
     } catch (error) {
       this.setState({
@@ -52,27 +52,29 @@ class RickAndMortyLists extends React.Component {
     return (
       <React.Fragment>
         <div className="RickAndMorty-list">
-          <div className="RickAndMorty__container">
-            <ul className="list-unstyled">
-              {this.state.data.results.map(character => {
-                return (
-                  <li key={character.id}>
-                    <div className="List-element">
-                      <img
-                        className="List-element__avatar"
-                        src={character.image}
-                        alt="Character"
-                      />
-                      <section className="List-element__info">
-                        <h3>{character.name}</h3>
-                        <p>{character.species}</p>
-                        <p>{character.origin.name}</p>
-                      </section>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
+          <div className="RickAndMorty__container container-fluid">
+            <div className="container-fluid">
+              <ul className="list-unstyled row">
+                {this.state.data.results.map(character => {
+                  return (
+                    <li className="col-12 col-md-4 col-lg-3" key={character.id}>
+                      <div className="List-element">
+                        <img
+                          className="List-element__avatar"
+                          src={character.image}
+                          alt="Character"
+                        />
+                        <section className="List-element__info">
+                          <h3>{character.name}</h3>
+                          <p>{character.species}</p>
+                          <p>{character.origin.name}</p>
+                        </section>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
 
             {/* Loader */}
             {this.state.loading && (
@@ -91,7 +93,7 @@ class RickAndMortyLists extends React.Component {
             {!this.state.loading && (
               <div className="clearfix">
                 <button
-                  onClick={()=>this.fetchCharacters()}
+                  onClick={() => this.fetchCharacters()}
                   className="btn btn-primary float-right"
                 >
                   Load More

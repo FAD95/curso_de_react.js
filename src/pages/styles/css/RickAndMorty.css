@@ -20,7 +20,6 @@
     align-items: center; }
   .RickAndMorty__container {
     width: 100%;
-    max-width: 580px;
     margin: 0 auto;
     padding: 0 1rem; }
   .RickAndMorty__logo {
