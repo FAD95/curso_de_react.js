@@ -9,9 +9,9 @@
     &__message{
         margin: 0 10px;
         color: white;
-        max-width: 300px;
+        max-width: 400px;
         &--logo{
-            max-width: 300px;
+            max-width: 400px;
             width: 100%;
         }
     }   
@@ -26,7 +26,7 @@
     .home{
         flex-direction: row;
         &__img{
-            max-width: 600px !important;
+            max-width: 700px !important;
             margin-left: auto !important;
             margin-top: 2em;
         }
