@@ -1,30 +1,32 @@
 {
   "files": {
-    "main.css": "/curso_de_react.js/static/css/main.c462f18d.chunk.css",
-    "main.js": "/curso_de_react.js/static/js/main.66fd9f5a.chunk.js",
-    "main.js.map": "/curso_de_react.js/static/js/main.66fd9f5a.chunk.js.map",
+    "main.css": "/curso_de_react.js/static/css/main.8ad01fcc.chunk.css",
+    "main.js": "/curso_de_react.js/static/js/main.12d524a1.chunk.js",
+    "main.js.map": "/curso_de_react.js/static/js/main.12d524a1.chunk.js.map",
     "runtime-main.js": "/curso_de_react.js/static/js/runtime-main.866e943c.js",
     "runtime-main.js.map": "/curso_de_react.js/static/js/runtime-main.866e943c.js.map",
-    "static/css/2.67123b20.chunk.css": "/curso_de_react.js/static/css/2.67123b20.chunk.css",
-    "static/js/2.25ed7140.chunk.js": "/curso_de_react.js/static/js/2.25ed7140.chunk.js",
-    "static/js/2.25ed7140.chunk.js.map": "/curso_de_react.js/static/js/2.25ed7140.chunk.js.map",
+    "static/css/2.1713ca2c.chunk.css": "/curso_de_react.js/static/css/2.1713ca2c.chunk.css",
+    "static/js/2.59735e6a.chunk.js": "/curso_de_react.js/static/js/2.59735e6a.chunk.js",
+    "static/js/2.59735e6a.chunk.js.map": "/curso_de_react.js/static/js/2.59735e6a.chunk.js.map",
     "index.html": "/curso_de_react.js/index.html",
-    "precache-manifest.7aca8b566d34a0a3d92b44f363355597.js": "/curso_de_react.js/precache-manifest.7aca8b566d34a0a3d92b44f363355597.js",
+    "precache-manifest.df660fe0466fad1f4f821ee7a14e3c26.js": "/curso_de_react.js/precache-manifest.df660fe0466fad1f4f821ee7a14e3c26.js",
     "service-worker.js": "/curso_de_react.js/service-worker.js",
-    "static/css/2.67123b20.chunk.css.map": "/curso_de_react.js/static/css/2.67123b20.chunk.css.map",
-    "static/css/main.c462f18d.chunk.css.map": "/curso_de_react.js/static/css/main.c462f18d.chunk.css.map",
-    "static/js/2.25ed7140.chunk.js.LICENSE.txt": "/curso_de_react.js/static/js/2.25ed7140.chunk.js.LICENSE.txt",
-    "static/media/badge-header.svg": "/curso_de_react.js/static/media/badge-header.973f5842.svg",
-    "static/media/home-logo.svg": "/curso_de_react.js/static/media/home-logo.b447eaed.svg",
+    "static/css/2.1713ca2c.chunk.css.map": "/curso_de_react.js/static/css/2.1713ca2c.chunk.css.map",
+    "static/css/main.8ad01fcc.chunk.css.map": "/curso_de_react.js/static/css/main.8ad01fcc.chunk.css.map",
+    "static/js/2.59735e6a.chunk.js.LICENSE.txt": "/curso_de_react.js/static/js/2.59735e6a.chunk.js.LICENSE.txt",
+    "static/media/astronauts.svg": "/curso_de_react.js/static/media/astronauts.71addf45.svg",
+    "static/media/badge-header.svg": "/curso_de_react.js/static/media/badge-header.b447eaed.svg",
+    "static/media/home-logo.svg": "/curso_de_react.js/static/media/home-logo.f246f5f1.svg",
     "static/media/logo.svg": "/curso_de_react.js/static/media/logo.0026b862.svg",
     "static/media/monstruos.png": "/curso_de_react.js/static/media/monstruos.ed914b75.png",
-    "static/media/Badges.css": "/curso_de_react.js/static/media/stars.1d17360a.svg"
+    "static/media/rickandmorty.png": "/curso_de_react.js/static/media/rickandmorty.a3848242.png",
+    "static/media/RickAndMorty.css": "/curso_de_react.js/static/media/stars.1d17360a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.866e943c.js",
-    "static/css/2.67123b20.chunk.css",
-    "static/js/2.25ed7140.chunk.js",
-    "static/css/main.c462f18d.chunk.css",
-    "static/js/main.66fd9f5a.chunk.js"
+    "static/css/2.1713ca2c.chunk.css",
+    "static/js/2.59735e6a.chunk.js",
+    "static/css/main.8ad01fcc.chunk.css",
+    "static/js/main.12d524a1.chunk.js"
   ]
 }
