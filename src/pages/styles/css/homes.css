@@ -18,9 +18,9 @@
   .home__message {
     margin: 0 10px;
     color: white;
-    max-width: 300px; }
+    max-width: 400px; }
     .home__message--logo {
-      max-width: 300px;
+      max-width: 400px;
       width: 100%; }
   .home__img {
     max-width: 50%;
@@ -34,7 +34,7 @@
     -ms-flex-direction: row;
     flex-direction: row; }
     .home__img {
-      max-width: 600px !important;
+      max-width: 700px !important;
       margin-left: auto !important;
       margin-top: 2em; } }
 
