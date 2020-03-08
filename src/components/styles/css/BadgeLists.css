@@ -10,14 +10,21 @@
   box-shadow: 2px 4px 11px -1px rgba(0, 0, 0, 0.75);
   margin: 2em auto;
   padding: 1em 1.5em;
-  border-radius: 10px; }
+  border-radius: 10px;
+  max-height: 100%; }
   .List-element__avatar {
-    width: 7em;
-    height: 7em;
+    width: 5em;
+    height: 5em;
     border-radius: 40px;
     margin-right: 2em;
     -webkit-box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75); }
+  .List-element__info h3 {
+    font-size: 22px;
+    margin-bottom: 5px; }
+  .List-element__info p {
+    font-size: 16px;
+    margin: 3px; }
   .List-element__info__twitter {
     color: #00a4d5;
     font-weight: 400; }

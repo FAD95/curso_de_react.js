@@ -1,0 +1,55 @@
+@media only screen and (max-width: 490px) {
+  .RickAndMorty-list .List-element {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center; }
+    .RickAndMorty-list .List-element__avatar {
+      margin: 1em auto !important; } }
+
+.RickAndMorty-list .loader {
+  height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 6em; }
+
+.RickAndMorty-list .List-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 2px 4px 11px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 11px -1px rgba(0, 0, 0, 0.75);
+  margin: 2em auto;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  max-height: 100%; }
+  .RickAndMorty-list .List-element__avatar {
+    width: 7em;
+    height: 7em;
+    border-radius: 40px;
+    margin-right: 2em;
+    -webkit-box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75); }
+  .RickAndMorty-list .List-element__info h3 {
+    font-size: 22px;
+    margin-bottom: 5px; }
+  .RickAndMorty-list .List-element__info p {
+    font-size: 16px;
+    margin: 3px; }
+  .RickAndMorty-list .List-element__info__twitter {
+    color: #00a4d5;
+    font-weight: 400; }
+    .RickAndMorty-list .List-element__info__twitter--logo {
+      width: 1.5em;
+      height: 1.5em;
+      margin-right: 0.5em; }

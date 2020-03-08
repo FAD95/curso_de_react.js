@@ -23,8 +23,10 @@
   margin: 0 auto;
   padding: 0 1rem; }
 
-.Badges_conf-logo {
-  margin-bottom: 2rem; }
+.Badges__logo {
+  margin-bottom: 2rem;
+  max-width: 250px;
+  width: 100%; }
 
 .Badges__buttons {
   display: -webkit-box;
