@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/curso_de_react.js/static/css/main.7fbc1f55.chunk.css",
+    "main.css": "/curso_de_react.js/static/css/main.36a986ab.chunk.css",
     "main.js": "/curso_de_react.js/static/js/main.5a0e73e9.chunk.js",
     "main.js.map": "/curso_de_react.js/static/js/main.5a0e73e9.chunk.js.map",
     "runtime-main.js": "/curso_de_react.js/static/js/runtime-main.866e943c.js",
@@ -9,10 +9,10 @@
     "static/js/2.59735e6a.chunk.js": "/curso_de_react.js/static/js/2.59735e6a.chunk.js",
     "static/js/2.59735e6a.chunk.js.map": "/curso_de_react.js/static/js/2.59735e6a.chunk.js.map",
     "index.html": "/curso_de_react.js/index.html",
-    "precache-manifest.96e5e0574e5c7231e14b10b1d8d7ef55.js": "/curso_de_react.js/precache-manifest.96e5e0574e5c7231e14b10b1d8d7ef55.js",
+    "precache-manifest.dc4256223e1fc572db4007da3aa80349.js": "/curso_de_react.js/precache-manifest.dc4256223e1fc572db4007da3aa80349.js",
     "service-worker.js": "/curso_de_react.js/service-worker.js",
     "static/css/2.1713ca2c.chunk.css.map": "/curso_de_react.js/static/css/2.1713ca2c.chunk.css.map",
-    "static/css/main.7fbc1f55.chunk.css.map": "/curso_de_react.js/static/css/main.7fbc1f55.chunk.css.map",
+    "static/css/main.36a986ab.chunk.css.map": "/curso_de_react.js/static/css/main.36a986ab.chunk.css.map",
     "static/js/2.59735e6a.chunk.js.LICENSE.txt": "/curso_de_react.js/static/js/2.59735e6a.chunk.js.LICENSE.txt",
     "static/media/astronauts.svg": "/curso_de_react.js/static/media/astronauts.71addf45.svg",
     "static/media/badge-header.svg": "/curso_de_react.js/static/media/badge-header.b447eaed.svg",
@@ -26,7 +26,7 @@
     "static/js/runtime-main.866e943c.js",
     "static/css/2.1713ca2c.chunk.css",
     "static/js/2.59735e6a.chunk.js",
-    "static/css/main.7fbc1f55.chunk.css",
+    "static/css/main.36a986ab.chunk.css",
     "static/js/main.5a0e73e9.chunk.js"
   ]
 }
