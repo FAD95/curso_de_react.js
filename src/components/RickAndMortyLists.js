@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/css/RickAndMortyLists.css";
+import "./styles/css/loaders.css";
 import { cleanup } from "@testing-library/react";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
@@ -57,7 +58,7 @@ class RickAndMortyLists extends React.Component {
               <ul className="list-unstyled row">
                 {this.state.data.results.map(character => {
                   return (
-                    <li className="col-12 col-md-4 col-lg-3" key={character.id}>
+                    <li className="col-12 col-md-4 col-lg-3 col-xl-2" key={character.id}>
                       <div className="List-element">
                         <img
                           className="List-element__avatar"

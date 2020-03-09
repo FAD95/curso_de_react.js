@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./styles/css/BadgeForms.css";
 class BadgeForm extends React.Component {
   // state={
   //   jobTitle: "Front-end Developer"
@@ -20,7 +20,8 @@ class BadgeForm extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <h1>New Attendant</h1>
+      <div className="form">
+      <h1>New Attendant</h1>
         <form onSubmit={this.handleSubmit} action="">
           <div className="form-group">
             <label htmlFor="firstName">First Name</label>
@@ -84,6 +85,8 @@ class BadgeForm extends React.Component {
             </button>
           </div>
         </form>
+      </div>
+        
       </React.Fragment>
     );
   }

@@ -17,6 +17,8 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    .Badge__header img {
+      width: 110px; }
   .Badge__section-name {
     display: -webkit-box;
     display: -ms-flexbox;
