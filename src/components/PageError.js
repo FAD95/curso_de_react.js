@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/css/PageError.css";
 
 function PageError(props) {
-  return <div className="PageError">👽{props.error.message}🚫</div>;
+  return <div className="PageError"><span role="img" aria-label="emoji">👽</span>{props.error.message}<span role="img" aria-label="emoji">🚫</span></div>;
 }
 
 export default PageError;
