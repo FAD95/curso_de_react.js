@@ -3,17 +3,26 @@ import header from "../images/badge-header.svg";
 import "./styles/css/BadgesNew.css";
 import Badge from "../components/Badge";
 import BadgeForm from "../components/BadgeForm";
+import api from "../api";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
+import "../components/styles/css/loaders.css";
 
 class BadgeNew extends React.Component {
-  state = {
-    form: {
-      firstName: "",
-      lastName: "",
-      email: "",
-      jobTitle: "Front-end Developer",
-      twitter: ""
-    }
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: false,
+      error: null,
+      form: {
+        firstName: "",
+        lastName: "",
+        email: "",
+        jobTitle: "Front-end Developer",
+        twitter: ""
+      }
+    };
+  }
 
   handleChange = e => {
     this.setState({
@@ -23,7 +32,28 @@ class BadgeNew extends React.Component {
       }
     });
   };
+
+  handleSubmit = async e => {
+    e.preventDefault();
+    this.setState({ loading: true });
+
+    try {
+      await api.badges.create(this.state.form);
+      this.setState({ loading: false });
+
+      this.props.history.push('/badges');
+    } catch (error) {
+      this.setState({ loading: false, error: error });
+    }
+  };
   render() {
+    if (this.state.loading) {
+      return (
+        <div className="loader">
+          <Loader type="Circles" color="#00BFFF" height={125} width={125} />
+        </div>
+      );
+    }
     return (
       <div>
         <main>
@@ -31,17 +61,23 @@ class BadgeNew extends React.Component {
             <img className="img-fluid" src={header} alt="logo header" />
           </section>
           <section className="container">
-            <div className="row ">
+            <div className="row Badge-new__container">
               <div className="col-12 col-md-6">
                 <Badge
-                  firstName={this.state.form.firstName}
-                  lastName={this.state.form.lastName}
-                  jobTitle={this.state.form.jobTitle}
-                  twitter={this.state.form.twitter}
+                  firstName={this.state.form.firstName || "First name"}
+                  lastName={this.state.form.lastName || "Last name"}
+                  jobTitle={this.state.form.jobTitle || "Job title"}
+                  twitter={this.state.form.twitter || "Twitter"}
+                  email={this.state.form.email}
                 />
               </div>
               <div className="col-12 col-md-6 mt-5">
-                <BadgeForm onChange={this.handleChange} formValues={this.state.form}/>
+                <BadgeForm
+                  onSubmit={this.handleSubmit}
+                  onChange={this.handleChange}
+                  formValues={this.state.form}
+                  error={this.state.error}
+                />
               </div>
             </div>
           </section>

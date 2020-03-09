@@ -6,7 +6,8 @@
   overflow: hidden;
   height: 100%;
   max-height: 380px;
-  color: black; }
+  color: black;
+  margin-bottom: 2em; }
   .Badge__header {
     padding: 0.5rem 0;
     height: 80px;

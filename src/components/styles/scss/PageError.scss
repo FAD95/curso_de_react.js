@@ -1,0 +1,25 @@
+.PageError {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  width: 100%;
+  font-size: 7em;
+  color: greenyellow;
+  background-color: #1b1b25;
+}
+
+@media screen and (min-width:470px) and (max-width: 768px) {
+  .PageError { 
+    font-size: 4em !important;
+
+  }
+}
+
+@media screen and (max-width: 470px) {
+    .PageError {   
+      font-size: 3em !important;
+    }
+  }
+  

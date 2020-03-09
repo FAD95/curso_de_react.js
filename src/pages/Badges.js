@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 import api from "../api";
+import PageError from "../components/PageError";
 class Badges extends React.Component {
   constructor(props) {
     super(props);
@@ -26,6 +27,8 @@ class Badges extends React.Component {
     try {
       const data = await api.badges.list();
       this.setState({ loading: false, data: data });
+      console.log(data);
+      
     } catch (error) {
       this.setState({ loading: false, error: error });
     }
@@ -48,6 +51,11 @@ class Badges extends React.Component {
   }
 
   render() {
+    if(this.state.error){
+      return(
+        <PageError  error={this.state.error}/>
+      )
+    }
     return (
       <React.Fragment>
         <main>
