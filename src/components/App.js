@@ -5,6 +5,7 @@ import BadgeNew from "../pages/BadgeNew";
 import Badges from "../pages/Badges";
 import NotFound from "../pages/NotFound";
 import RickAndMorty from "../pages/RickAndMorty";
+import BadgeEdit from "../pages/BadgeEdit"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/home" component={Home} />
           <Route exact path="/badges" component={Badges} />
           <Route exact path="/badges/new" component={BadgeNew} />
+          <Route exact path="/badges/:badgeId/edit" component={BadgeEdit} />
           <Route exact path="/rickandmorty" component={RickAndMorty} />
           <Route component={NotFound} />
         </Switch>

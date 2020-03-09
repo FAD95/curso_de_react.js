@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/css/BadgeLists.css";
 import Gravatar from "./Gravatar";
-
+import Delete from "../images/delete.png";
+import Edit from "../images/edit.png";
 class BadgesLists extends React.Component {
   state = {};
   render() {
@@ -46,6 +47,20 @@ class BadgesLists extends React.Component {
                             @{badge.twitter}
                           </span>
                         </p>
+                      </section>
+                      <section className="Badge-buttons">
+                        <Link
+                          className="btn btn-primary mb-2 Badge-buttons__btn"
+                          to={`/badges/${badge.id}/edit`}
+                        >
+                          <img className="Badge-buttons__btn--img" src={Edit} alt="Delete" />
+                        </Link>
+                        <Link
+                          className="btn btn-danger Badge-buttons__btn"
+                          to={`/badges/${badge.id}/edit`}
+                        >
+                          <img className="Badge-buttons__btn--img" src={Delete} alt="Edit" />
+                        </Link>
                       </section>
                     </div>
                   </li>
