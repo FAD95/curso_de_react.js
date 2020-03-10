@@ -19,7 +19,8 @@ class BadgeNew extends React.Component {
         lastName: "",
         email: "",
         jobTitle: "Front-end Developer",
-        twitter: ""
+        twitter: "",
+        title: "New Attendant"
       }
     };
   }
@@ -77,6 +78,7 @@ class BadgeNew extends React.Component {
                   onChange={this.handleChange}
                   formValues={this.state.form}
                   error={this.state.error}
+                  title="New Attendant"
                 />
               </div>
             </div>

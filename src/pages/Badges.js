@@ -13,12 +13,14 @@ class Badges extends React.Component {
     super(props);
     this.state = {
       loading: true,
-      data: [],
+      data: undefined,
       error: null
     };
   }
   componentDidMount() {
     this.fetchData();
+
+    this.intervalId = setInterval(this.fetchData, 2000);
   }
 
   fetchData = async () => {
@@ -27,34 +29,27 @@ class Badges extends React.Component {
     try {
       const data = await api.badges.list();
       this.setState({ loading: false, data: data });
-      console.log(data);
-      
     } catch (error) {
       this.setState({ loading: false, error: error });
     }
   };
 
-  componentDidUpdate(prevProps, prevState) {
-    console.log("5. componentDidUpdate()");
-    console.log({
-      prevProps: prevProps,
-      prevState: prevState
-    });
-    console.log({
-      Props: this.props,
-      State: this.state
-    });
-  }
+  componentDidUpdate(prevProps, prevState) {}
 
   componentWillUnmount() {
-    clearTimeout(this.timeId);
+    clearInterval(this.intervalId);
   }
 
   render() {
-    if(this.state.error){
-      return(
-        <PageError  error={this.state.error}/>
-      )
+    if (this.state.loading && !this.state.data) {
+      return (
+        <div className="loader">
+          <Loader type="Circles" color="#00BFFF" height={125} width={125} />
+        </div>
+      );
+    }
+    if (this.state.error) {
+      return <PageError error={this.state.error} />;
     }
     return (
       <React.Fragment>
@@ -80,12 +75,7 @@ class Badges extends React.Component {
         </main>
         {this.state.loading && (
           <div className="loader">
-            <Loader
-              type="Circles"
-              color="#00BFFF"
-              height={125}
-              width={125}
-            />
+            <Loader type="Puff" color="#00BFFF" height={50} width={50} />
           </div>
         )}
       </React.Fragment>
