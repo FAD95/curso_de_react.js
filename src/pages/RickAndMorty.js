@@ -1,6 +1,6 @@
 import React from "react";
 import RickAndMortyLists from "../components/RickAndMortyLists";
-import "./styles/css/RickAndMorty.css";
+import "./styles/RickAndMorty.scss";
 import BadgeHero from "../images/rickandmorty.png";
 class Badges extends React.Component {
    

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./styles/css/BadgeLists.css";
+import "./styles/BadgeLists.scss";
 import Gravatar from "./Gravatar";
 import Delete from "../images/delete.png";
 import Edit from "../images/edit.png";

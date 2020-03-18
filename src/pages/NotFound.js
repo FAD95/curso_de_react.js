@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/css/homes.css";
+import "./styles/homes.scss";
 import NotFoundImg from "../images/monstruos.png";
 import {Link} from "react-router-dom";
 

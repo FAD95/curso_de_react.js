@@ -1,12 +1,12 @@
 import React from "react";
 import header from "../images/badge-header.svg";
-import "./styles/css/BadgesEdit.css";
+import "./styles/BadgesEdit.scss";
 import Badge from "../components/Badge";
 import BadgeForm from "../components/BadgeForm";
 import api from "../api";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
-import "../components/styles/css/loaders.css";
+import "../components/styles/loaders.scss";
 
 class BadgeEdit extends React.Component {
   constructor(props) {

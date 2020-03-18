@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/css/BadgeForms.css";
+import "./styles/BadgeForms.scss";
 class BadgeForm extends React.Component {
   // state={
   //   jobTitle: "Front-end Developer"

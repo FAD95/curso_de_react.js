@@ -1,7 +1,7 @@
 import React from "react";
 import BadgeLists from "../components/BadgeLists";
-import "./styles/css/Badges.css";
-import "../components/styles/css/loaders.css";
+import "./styles/Badges.scss";
+import "../components/styles/loaders.scss";
 import BadgeHero from "../images/badge-header.svg";
 import { Link } from "react-router-dom";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";

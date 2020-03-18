@@ -1,6 +1,6 @@
 import React from "react";
-import "./styles/css/RickAndMortyLists.css";
-import "./styles/css/loaders.css";
+import "./styles/RickAndMortyLists.scss";
+import "./styles/loaders.scss";
 import { cleanup } from "@testing-library/react";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";

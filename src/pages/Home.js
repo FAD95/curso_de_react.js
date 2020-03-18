@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/css/homes.css";
+import "./styles/homes.scss";
 import logo from "../images/astronauts.svg";
 import platziLogo from "../images/home-logo.svg";
 import { Link } from "react-router-dom";
