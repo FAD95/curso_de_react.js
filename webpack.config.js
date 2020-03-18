@@ -14,7 +14,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "js/[name].[hash].js",
     publicPath: "http://localhost:3001/",
-    chunkFilename: "js/[id].[chunkhash].js"
+    chunkFilename: "js/[id].[chunkhash].js",
   },
   optimization: {
     minimizer: [new TerserJSPlugin(), new OptimizeCSSAssetsPlugin()]
