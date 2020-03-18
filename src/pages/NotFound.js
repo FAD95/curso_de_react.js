@@ -12,7 +12,7 @@ class NotFound extends React.Component {
           <section className="home__message">
             <h2>404 Error</h2>
             <p>The page you request does'nt exist</p>
-            <Link className="btn btn-primary" to="/badge">
+            <Link className="btn btn-primary" to="/home">
               Come Home
             </Link>
           </section>
